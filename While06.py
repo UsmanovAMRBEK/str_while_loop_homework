@@ -7,11 +7,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    consonant=['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
+    consonant="bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
     count = 0
     i=0
     while i < len(s):
-        if s[i].islower() in consonant:
+        if s[i] in consonant:
             count += 1
         i += 1
     return count
