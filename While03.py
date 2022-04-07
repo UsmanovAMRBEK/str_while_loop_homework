@@ -1,3 +1,6 @@
+from string import punctuation
+
+
 def main(s):
     """
     A variable of type str is given. Find how many punctuations it contains and return.
@@ -6,4 +9,11 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    punctuation=['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~']
+    count = 0
+    i=0
+    while i < len(s):
+        if s[i] in punctuation:
+            count += 1
+        i += 1
+    return count
