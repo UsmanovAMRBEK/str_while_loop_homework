@@ -6,4 +6,9 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    sum=0
+    i=0
+    while i < len(s):
+        sum+=int(s[i])
+        i+=1
+    return sum
